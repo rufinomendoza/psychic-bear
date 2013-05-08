@@ -11,8 +11,7 @@
 
   <div class="form-actions">
     <%= f.submit "Sign up", class: "btn btn-primary" %>
+    <%= link_to (image_tag "google_32.png", :size => "32x32", :alt => "Google"), user_omniauth_authorize_path(:google_oauth2) %>
   </div>
 
 <% end %>
-
-<%= render "devise/shared/links" %>

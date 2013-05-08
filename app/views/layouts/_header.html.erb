@@ -14,7 +14,7 @@
                   <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
                 <% else %>
                   <li><%= link_to "Login", new_user_session_path %></li>
-                  <li><%= link_to "Login with Google", user_omniauth_authorize_path(:google_oauth2) %></li>
+                  <li><%= link_to (image_tag "google_32.png", :size => "20x20", :alt => "Google"), user_omniauth_authorize_path(:google_oauth2) %></li>
                 <% end %>
               </ul>
             </div>
